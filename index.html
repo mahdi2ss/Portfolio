@@ -1168,16 +1168,21 @@
       flex-direction: column;
     }
 
+    .modal-top-sticky {
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 20;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
     .modal-header {
-      padding: 2rem 2.5rem 1.5rem;
+      padding: 1.8rem 2.5rem 1.2rem;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      position: sticky;
-      top: 0;
       background: var(--surface);
-      z-index: 10;
     }
 
     .modal-close {
@@ -1881,21 +1886,23 @@
   <!-- PROJECT DETAIL MODAL -->
   <div class="modal-overlay" id="projectModal">
     <div class="modal-container">
-      <div class="modal-header">
-        <div>
-          <span id="modalCategory" class="timeline-tag">CATEGORY</span>
-          <h2 id="modalTitle" style="font-family:var(--font-display); font-size:1.8rem; margin-top:0.4rem">Project Title</h2>
-          <div id="modalLocation" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-gold); margin-top:0.2rem">Site / Year</div>
+      <div class="modal-top-sticky">
+        <div class="modal-header">
+          <div>
+            <span id="modalCategory" class="timeline-tag">CATEGORY</span>
+            <h2 id="modalTitle" style="font-family:var(--font-display); font-size:1.8rem; margin-top:0.4rem">Project Title</h2>
+            <div id="modalLocation" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-gold); margin-top:0.2rem">Site / Year</div>
+          </div>
+          <button class="modal-close" onclick="closeProjectModal()">✕</button>
         </div>
-        <button class="modal-close" onclick="closeProjectModal()">✕</button>
-      </div>
 
-      <div class="modal-tabs">
-        <button class="modal-tab-btn active" onclick="switchModalTab(0)" data-i18n="tab_prob">01. Problem Statement</button>
-        <button class="modal-tab-btn" onclick="switchModalTab(1)" data-i18n="tab_syn">02. Synthesis & Analysis</button>
-        <button class="modal-tab-btn" onclick="switchModalTab(2)" data-i18n="tab_sol">03. Masterplan Solution</button>
-        <button class="modal-tab-btn" onclick="switchModalTab(3)" data-i18n="tab_gallery">04. PDF Boards & Renders</button>
-        <button class="modal-tab-btn" onclick="switchModalTab(4)" data-i18n="tab_tech">05. Tech Specs & Software</button>
+        <div class="modal-tabs">
+          <button class="modal-tab-btn active" onclick="switchModalTab(0)" data-i18n="tab_prob">01. Problem Statement</button>
+          <button class="modal-tab-btn" onclick="switchModalTab(1)" data-i18n="tab_syn">02. Synthesis & Analysis</button>
+          <button class="modal-tab-btn" onclick="switchModalTab(2)" data-i18n="tab_sol">03. Masterplan Solution</button>
+          <button class="modal-tab-btn" onclick="switchModalTab(3)" data-i18n="tab_gallery">04. PDF Boards & Renders</button>
+          <button class="modal-tab-btn" onclick="switchModalTab(4)" data-i18n="tab_tech">05. Tech Specs & Software</button>
+        </div>
       </div>
 
       <div class="modal-body">
