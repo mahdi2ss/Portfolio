@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Mahdi CHAABI — Junior Urban Planner | Territorial Planning & GIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.5;
+      padding: 2rem;
+    }
+    .cv-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2.5rem 3rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .name { font-size: 2.2rem; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
+    .subtitle { font-size: 1.1rem; font-weight: 600; color: #2563eb; margin-top: 0.2rem; }
+    .contact-info { font-size: 0.85rem; color: #64748b; margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .contact-info span { display: flex; align-items: center; gap: 0.3rem; }
+    
+    .section-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 0.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .profile-text { font-size: 0.9rem; color: #334155; text-align: justify; }
+    
+    .exp-item, .edu-item { margin-bottom: 1.2rem; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .exp-role { font-weight: 700; font-size: 0.95rem; color: #0f172a; }
+    .exp-company { font-weight: 600; color: #475569; }
+    .exp-date { font-size: 0.8rem; color: #64748b; font-style: italic; }
+    .exp-bullets { list-style: disc; margin-left: 1.2rem; margin-top: 0.4rem; font-size: 0.88rem; color: #334155; }
+    .exp-bullets li { margin-bottom: 0.3rem; }
+    
+    .skills-grid { display: grid; grid-template-columns: 1fr; gap: 0.5rem; font-size: 0.88rem; color: #334155; }
+    .skills-grid strong { color: #0f172a; }
+    
+    .btn-print {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #2563eb;
+      color: #fff;
+      padding: 0.8rem 1.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+      cursor: pointer;
+      border: none;
+    }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .cv-container { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+      .btn-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn-print" onclick="window.print()">Print / Save PDF</button>
+
+  <div class="cv-container">
+    <div class="header">
+      <h1 class="name">Mahdi CHAABI</h1>
+      <div class="subtitle">Junior Urban Planner | Territorial Planning | GIS</div>
+      <div class="contact-info">
+        <span>mahdi.chaabi1@gmail.com</span> •
+        <span>+49 155 10805631</span> •
+        <span>Wolfsburg, Germany — Open to relocation worldwide</span>
+      </div>
+    </div>
+
+    <div class="section-title">PROFILE</div>
+    <p class="profile-text">
+      Recent graduate in urban planning and territorial development, trained in Tunisia with two academic exchanges in Germany (Bremen, Marburg). Experience in territorial diagnostics, operational urban planning, planning documents and public consultation, and GIS/CAD tools (ArcGIS, AutoCAD, Revit). Open to relocating internationally, seeking a first professional experience in a consulting firm or urban planning agency.
+    </p>
+
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+    
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Assistant Project Manager – Building / Renovation</span> — <span class="exp-company">Wolfsburg, Germany</span></div>
+        <div class="exp-date">February 2025 – December 2025 · part-time</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Coordinated renovation and residential construction projects, working directly with site supervisors, engineers and subcontractors (role close to a site management/supervision function).</li>
+        <li>Contributed to technical drawings and 3D modeling, as well as on-site surveys (AutoCAD, Revit).</li>
+        <li>Monitored compliance with deadlines and safety standards across several construction sites in parallel.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Urban Planning Studies Intern</span> — <span class="exp-company">Urban Rehabilitation and Renewal Agency, Tunis</span></div>
+        <div class="exp-date">June 2023 – September 2023</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Analyzed and processed territorial data (demographics, land use, patterns of use) to inform planning decisions, following a logic similar to French local urban plan (PLU/SCOT) diagnostics.</li>
+        <li>Contributed to operational and strategic urban planning proposals as part of urban rehabilitation projects.</li>
+        <li>Contributed to the planning of urban development projects, in coordination with the agency's team.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Final-Year Project – Urban Rehabilitation</span> — <span class="exp-company">Urban Rehabilitation and Renewal Agency, Tunis</span></div>
+        <div class="exp-date">February 2022 – May 2022</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Designed an urban rehabilitation project for a deprived neighborhood, from analysis through to operational recommendations.</li>
+        <li>Analyzed socio-economic and environmental issues of the site; presented findings to the agency's planning team.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">EDUCATION</div>
+    
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">ISTEUB, Tunis</span> — <span class="exp-company">National Diploma in Urban Planning and Development (Bachelor's + National Diploma)</span></div>
+        <div class="exp-date">2022 – 2025</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Universität Bremen & Philipps-Universität Marburg, Germany</span> — <span class="exp-company">Academic exchanges</span></div>
+        <div class="exp-date">2024 – 2026</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">ISTEUB, Tunis</span> — <span class="exp-company">Bachelor's Degree in Urban Planning and Territorial Development</span></div>
+        <div class="exp-date">2019 – 2022</div>
+      </div>
+    </div>
+
+    <div class="section-title">SKILLS & SOFTWARE</div>
+    <div class="skills-grid">
+      <div><strong>Urban planning & analysis:</strong> Urban diagnostics, planning documents (PAU – equivalent to a French PLU/local urban plan), issue analysis, data processing (Excel), reading of urban fabric</div>
+      <div><strong>Mapping & GIS:</strong> ArcGIS, Surfer</div>
+      <div><strong>Architectural design:</strong> SketchUp, AutoCAD, Revit, Lumion, V-Ray, Rhino</div>
+      <div><strong>Graphic design:</strong> Adobe Photoshop, Adobe InDesign</div>
+    </div>
+
+    <div class="section-title">LANGUAGES</div>
+    <p class="profile-text">
+      Arabic (native) · French (fluent) · English (professional) · German (intermediate)
+    </p>
+
+    <div class="section-title">ACADEMIC PROJECTS</div>
+    <ul class="exp-bullets">
+      <li><strong>Redevelopment of the La Goulette port area, Tunis</strong> — diagnostic and redevelopment strategy for the city-port interface, waterfront enhancement.</li>
+      <li><strong>Soukra Eco-District, Tunis</strong> — urban programming of an eco-district integrating functional mix and environmental issues.</li>
+      <li><strong>Partial revision of the Ezzahra Urban Development Plan (PAU, equivalent to a French PLU), Tunis</strong> — territorial analysis, diagnostics and planning orientations.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

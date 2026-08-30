@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Mahdi CHAABI — Urbaniste Junior | SIG & Aménagement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.5;
+      padding: 2rem;
+    }
+    .cv-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2.5rem 3rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .name { font-size: 2.2rem; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
+    .subtitle { font-size: 1.1rem; font-weight: 600; color: #2563eb; margin-top: 0.2rem; }
+    .contact-info { font-size: 0.85rem; color: #64748b; margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .contact-info span { display: flex; align-items: center; gap: 0.3rem; }
+    
+    .section-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 0.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .profile-text { font-size: 0.9rem; color: #334155; text-align: justify; }
+    
+    .exp-item, .edu-item { margin-bottom: 1.2rem; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .exp-role { font-weight: 700; font-size: 0.95rem; color: #0f172a; }
+    .exp-company { font-weight: 600; color: #475569; }
+    .exp-date { font-size: 0.8rem; color: #64748b; font-style: italic; }
+    .exp-bullets { list-style: disc; margin-left: 1.2rem; margin-top: 0.4rem; font-size: 0.88rem; color: #334155; }
+    .exp-bullets li { margin-bottom: 0.3rem; }
+    
+    .skills-grid { display: grid; grid-template-columns: 1fr; gap: 0.5rem; font-size: 0.88rem; color: #334155; }
+    .skills-grid strong { color: #0f172a; }
+    
+    .btn-print {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #2563eb;
+      color: #fff;
+      padding: 0.8rem 1.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+      cursor: pointer;
+      border: none;
+    }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .cv-container { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+      .btn-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn-print" onclick="window.print()"> Imprimer / Sauvegarder PDF</button>
+
+  <div class="cv-container">
+    <div class="header">
+      <h1 class="name">Mahdi CHAABI</h1>
+      <div class="subtitle">Urbaniste junior | Aménagement du territoire | Urbanisme réglementaire (PLU/PAU) | SIG</div>
+      <div class="contact-info">
+        <span>mahdi.chaabi1@gmail.com</span> •
+        <span>+49 155 10805631</span> •
+        <span>Wolfsburg, Allemagne — Mobilité France / Europe</span>
+      </div>
+    </div>
+
+    <div class="section-title">PROFIL</div>
+    <p class="profile-text">
+      Jeune diplômé en urbanisme et aménagement du territoire (Bac+5), formé en Tunisie avec deux séjours académiques en Allemagne (Brême, Marburg). Expérience en diagnostic territorial, urbanisme opérationnel et réglementaire (documents d'urbanisme, concertation), et outils SIG/CAO (ArcGIS, AutoCAD, Revit). Mobile pour un poste en France, à la recherche d'une première expérience en bureau d'études ou en agence d'urbanisme.
+    </p>
+
+    <div class="section-title">EXPÉRIENCE PROFESSIONNELLE</div>
+    
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Assistant chef de projet – bâtiment / rénovation</span> — <span class="exp-company">Wolfsburg, Allemagne</span></div>
+        <div class="exp-date">Février 2025 – Décembre 2025 · temps partiel</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Coordination de projets de rénovation et de construction résidentielle, en lien direct avec chefs de chantier, ingénieurs et sous-traitants (interface proche d'une mission de maîtrise d'œuvre).</li>
+        <li>Participation aux dessins techniques et à la modélisation 3D, ainsi qu'aux relevés sur site (AutoCAD, Revit).</li>
+        <li>Suivi du respect des délais et des normes de sécurité sur plusieurs chantiers en parallèle.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Stagiaire chargé d'études en urbanisme</span> — <span class="exp-company">Agence de Réhabilitation et de Rénovation Urbaine, Tunis</span></div>
+        <div class="exp-date">Juin 2023 – Septembre 2023</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Analyse et traitement de données territoriales (démographie, occupation du sol, usages) pour orienter des choix d'aménagement, dans une logique proche des diagnostics de PLU/SCOT.</li>
+        <li>Élaboration de propositions d'urbanisme opérationnel et stratégique dans le cadre de projets de réhabilitation urbaine.</li>
+        <li>Contribution à la planification de projets de développement urbain, en coordination avec l'équipe de l'agence.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Projet de fin d'études – Réhabilitation urbaine</span> — <span class="exp-company">Agence de Réhabilitation et de Rénovation Urbaine, Tunis</span></div>
+        <div class="exp-date">Février 2022 – Mai 2022</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Conception d'un projet de réhabilitation urbaine dans un quartier dégradé, de l'analyse jusqu'aux recommandations opérationnelles.</li>
+        <li>Analyse des enjeux socio-économiques et environnementaux du site ; présentation des résultats à l'équipe de planification de l'agence.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">FORMATION</div>
+    
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">ISTEUB, Tunis</span> — <span class="exp-company">Diplôme National en Urbanisme et Aménagement (Licence + Diplôme national), équivalent Bac+5</span></div>
+        <div class="exp-date">2022 – 2025</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">Universität Bremen & Philipps-Universität Marburg, Allemagne</span> — <span class="exp-company">Échanges académiques</span></div>
+        <div class="exp-date">2024 – 2026</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <div><span class="exp-role">ISTEUB, Tunis</span> — <span class="exp-company">Licence en Urbanisme et Aménagement du Territoire</span></div>
+        <div class="exp-date">2019 – 2022</div>
+      </div>
+    </div>
+
+    <div class="section-title">COMPÉTENCES ET LOGICIELS</div>
+    <div class="skills-grid">
+      <div><strong>Urbanisme & analyse:</strong> Diagnostic urbain, documents d'urbanisme réglementaires (PAU – équivalent PLU), analyse des enjeux, traitement de données (Excel), lecture des tissus urbains</div>
+      <div><strong>Cartographie & SIG:</strong> ArcGIS, Surfer</div>
+      <div><strong>Conception architecturale:</strong> SketchUp, AutoCAD, Revit, Lumion, V-Ray, Rhino</div>
+      <div><strong>Conception graphique:</strong> Adobe Photoshop, Adobe InDesign</div>
+    </div>
+
+    <div class="section-title">LANGUES</div>
+    <p class="profile-text">
+      Arabe (langue maternelle) · Français (courant) · Anglais (professionnel) · Allemand (intermédiaire)
+    </p>
+
+    <div class="section-title">PROJETS ACADÉMIQUES</div>
+    <ul class="exp-bullets">
+      <li><strong>Réaménagement de la zone portuaire de La Goulette, Tunis</strong> — diagnostic et stratégie de réaménagement de l'interface ville-port, valorisation du front d'eau.</li>
+      <li><strong>Écoquartier de Soukra, Tunis</strong> — programmation urbaine d'un écoquartier, mixité fonctionnelle et enjeux environnementaux.</li>
+      <li><strong>Révision partielle du Plan d'Aménagement Urbain (PAU, équivalent PLU) d'Ezzahra, Tunis</strong> — analyse réglementaire et territoriale, diagnostic et orientations d'aménagement.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
