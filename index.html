@@ -865,35 +865,7 @@
       box-shadow: 0 24px 50px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(0,240,255,0.12);
     }
 
-    /* Hover Overlay CTA */
-    .project-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,10,20,0.72);
-      backdrop-filter: blur(3px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-mono);
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 3px;
-      color: var(--accent);
-      text-shadow: 0 0 20px rgba(0,240,255,0.8);
-      opacity: 0;
-      transition: opacity 0.35s ease;
-      z-index: 10;
-      pointer-events: none;
-    }
 
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-
-    /* Suppress overlay when hovering over before-after slider */
-    .project-card:has(.before-after-container:hover) .project-overlay {
-      opacity: 0 !important;
-    }
 
     .project-preview {
       height: 260px;
@@ -1687,7 +1659,6 @@
           <div class="project-preview" onclick="event.stopPropagation()">
             <span class="project-badge">MASTER PFE // 2025</span>
             <span class="project-year">La Goulette, Tunis</span>
-            <div class="project-overlay" data-i18n="p_open">OPEN PROJECT ↗</div>
             <!-- Innovative Before/After Comparison Slider -->
             <div class="before-after-container" id="baSlider"
                  onmousedown="startBA(event)" ontouchstart="startBA(event)" onclick="event.stopPropagation()">
@@ -1722,7 +1693,6 @@
           <div class="project-preview">
             <span class="project-badge">WATERFRONT // 2024</span>
             <span class="project-year">La Goulette Corniche</span>
-            <div class="project-overlay" data-i18n="p_open">OPEN PROJECT ↗</div>
             <!-- Real Extracted PDF Board Image -->
             <img src="goulette_corniche_img_1.jpg" alt="Voyage Aquatique Masterplan Board" loading="lazy">
           </div>
@@ -1747,7 +1717,6 @@
           <div class="project-preview">
             <span class="project-badge">BIOPHILIC // 2024</span>
             <span class="project-year">Salah Azaïez, Tunis</span>
-            <div class="project-overlay" data-i18n="p_open">OPEN PROJECT ↗</div>
             <!-- Real Extracted PDF Board Image -->
             <img src="salah_azaiez_img_1.jpg" alt="Hôpital Salah Azaïez Biophilic Board" loading="lazy">
           </div>
@@ -1772,7 +1741,6 @@
           <div class="project-preview">
             <span class="project-badge">LICENCE PFE // 2022</span>
             <span class="project-year">Chbedda, Ben Arous</span>
-            <div class="project-overlay" data-i18n="p_open">OPEN PROJECT ↗</div>
             <!-- Real Extracted PDF Board Image -->
             <img src="chbedda_img_4.jpg" alt="Chbedda GIS Multi-layer Stack Board" loading="lazy">
           </div>
@@ -1797,7 +1765,6 @@
           <div class="project-preview">
             <span class="project-badge">HERITAGE // 2024</span>
             <span class="project-year">El Jem, Tunisia</span>
-            <div class="project-overlay" data-i18n="p_open">OPEN PROJECT ↗</div>
             <!-- Real Extracted PDF Board Image -->
             <img src="el_jem_img_1.jpg" alt="El Jem Amphitheatre Scenographic Board" loading="lazy">
           </div>
@@ -2008,7 +1975,6 @@
         p4_subtitle: "Restructuring three spontaneous settlements (El Markez, El Mora, El Olya) through hydrographic integration, bio-farms, and non-polluting light industry.",
         p5_title: "El Jem Amphitheatre: Heritage Renovation & Scenography",
         p5_subtitle: "Historic Roman monument enhancement with visitor reception hub, cultural exhibition stands, compatible façade materials, and nocturnal scenic illumination.",
-        p_open: "OPEN PROJECT ↗",
         p_details: "View Project Details",
         contact_tag: "RECRUITER CONNECT",
         contact_title: "GET IN TOUCH & RECRUITMENT",
@@ -2086,7 +2052,6 @@
         p4_subtitle: "Restructuration de trois quartiers spontanés (El Markez, El Mora, El Olya) par l'intégration hydrographique, l'agriculture bio et l'artisanat non polluant.",
         p5_title: "Amphithéâtre d'El Jem: Rénovation Patrimoniale & Scénographie",
         p5_subtitle: "Mise en valeur du monument romain avec centre d'accueil, stands d'expositions temporaires, matériaux compatibles et mise en lumière nocturne.",
-        p_open: "OUVRIR LE PROJET ↗",
         p_details: "Consulter la Fiche Technique",
         contact_tag: "RECRUTEMENT",
         contact_title: "CONTACT & OPPORTUNITÉS",
@@ -2164,7 +2129,6 @@
         p4_subtitle: "Neustrukturierung dreier informeller Siedlungen durch hydrographische Einbindung, Bio-Landwirtschaft und grünes Gewerbe.",
         p5_title: "Amphitheater El Jem: Denkmalpflege & Szenografie",
         p5_subtitle: "Aufwertung des römischen Monuments mit Besucherzentrum, Ausstellungsständen, kompatiblen Fassadenmaterialien und Lichtinszenierung.",
-        p_open: "PROJEKT ÖFFNEN ↗",
         p_details: "Projektdetails Anzeigen",
         contact_tag: "KONTAKT",
         contact_title: "REKRUTIERUNG & KONTAKT",
