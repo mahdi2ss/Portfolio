@@ -1465,7 +1465,7 @@
             </div>
 
             <div style="margin-top:1.2rem">
-              <a href="cv_mahdi_chaabi_en.html" target="_blank" class="btn btn-outline cv-link-btn" style="width:100%; font-size:0.8rem; padding:0.6rem 1rem; justify-content:center" data-i18n="hero_btn_cv">
+              <a href="cv_mahdi_chaabi_en.pdf" target="_blank" class="btn btn-outline cv-link-btn" style="width:100%; font-size:0.8rem; padding:0.6rem 1rem; justify-content:center" data-i18n="hero_btn_cv">
                 Download CV (PDF)
               </a>
             </div>
@@ -2333,11 +2333,11 @@
 
       // Update CV link buttons dynamically based on active language
       const cvMap = {
-        en: 'cv_mahdi_chaabi_en.html',
-        fr: 'cv_mahdi_chaabi_fr.html',
-        de: 'cv_mahdi_chaabi_de.html'
+        en: 'cv_mahdi_chaabi_en.pdf',
+        fr: 'cv_mahdi_chaabi_fr.pdf',
+        de: 'cv_mahdi_chaabi_de.pdf'
       };
-      const activeCv = cvMap[lang] || 'cv_mahdi_chaabi_fr.html';
+      const activeCv = cvMap[lang] || 'cv_mahdi_chaabi_en.pdf';
       document.querySelectorAll('.cv-link-btn').forEach(btn => {
         btn.setAttribute('href', activeCv);
       });
